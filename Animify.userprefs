@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{87D2A860-60EA-4454-8B9A-56D414C86526}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SentimentAnalysisService/Controllers/Sentiment.cs">
+    <Files>
+      <File FileName="SentimentAnalysisService/Controllers/AnalysisController.cs" Line="20" Column="42" />
+      <File FileName="SentimentAnalysisService/Controllers/ISentimentAnalyser.cs" Line="7" Column="18" />
+      <File FileName="SentimentAnalysisService/Controllers/Sentiment.cs" Line="5" Column="20" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SentimentAnalysisService PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
