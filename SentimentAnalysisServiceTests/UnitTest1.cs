@@ -1,4 +1,6 @@
 using System;
+using System.Threading.Tasks;
+using SentimentAnalysisService.Controllers;
 using Xunit;
 
 namespace SentimentAnalysisServiceTests
@@ -6,9 +8,11 @@ namespace SentimentAnalysisServiceTests
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public async Task Test1Async()
         {
-            Assert.True(true);
+            var ibmAnalyzer = new WatsonToneAnalyzer();
+            var sentiment = await ibmAnalyzer.Analyse("Hello there!");
+            Assert.True(sentiment != null);
 
         }
     }
