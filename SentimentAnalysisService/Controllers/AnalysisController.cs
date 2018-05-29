@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 namespace SentimentAnalysisService.Controllers
@@ -7,15 +8,15 @@ namespace SentimentAnalysisService.Controllers
     public class AnalysisController : Controller
     {
 
-        public AnalysisController(ISentimentAnalyser sentimentAnalyser = null){
+        public AnalysisController(ISentimentAnalyzer sentimentAnalyser = null){
             SentimentAnalyser = sentimentAnalyser;
         }
 
-        public ISentimentAnalyser SentimentAnalyser { get; }
+        public ISentimentAnalyzer SentimentAnalyser { get; }
 
         // GET api/analysis
         [HttpGet]
-        public Sentiment Get(string text)
+        public Task<Sentiment> Get(string text)
         {
             return SentimentAnalyser.Analyse(text);
         }
