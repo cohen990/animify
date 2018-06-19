@@ -1,6 +1,6 @@
 ﻿using EasyConfig.Attributes;
 
-namespace SentimentAnalysisService.Controllers
+namespace SentimentAnalysisService.Configuration
 {
     internal class WatsonConfig
     {

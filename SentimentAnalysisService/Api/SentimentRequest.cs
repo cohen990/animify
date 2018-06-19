@@ -1,4 +1,4 @@
-﻿namespace SentimentAnalysisService.Controllers
+﻿namespace SentimentAnalysisService.Api
 {
     public class SentimentRequest
     {

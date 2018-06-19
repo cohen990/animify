@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UnitTest1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="watson-config.json" />
   </ItemGroup>
 
@@ -26,9 +30,5 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SentimentAnalysisService\SentimentAnalysisService.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Infrastructure\" />
   </ItemGroup>
 </Project>

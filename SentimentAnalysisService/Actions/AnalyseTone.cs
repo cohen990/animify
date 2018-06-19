@@ -3,8 +3,10 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using EasyConfig;
+using SentimentAnalysisService.Domain;
+using SentimentAnalysisService.Configuration;
 
-namespace SentimentAnalysisService.Controllers
+namespace SentimentAnalysisService.Actions
 {
     public class AnalyseTone
     {
@@ -23,8 +25,10 @@ namespace SentimentAnalysisService.Controllers
             HttpResponseMessage response = await client.PostAsync("https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2017-09-21",
                                                                  content);
             HttpContent responseContent = response.Content;
-            var sentiment = new Sentiment();
-            sentiment.Analysis = await responseContent.ReadAsStringAsync();
+            var sentiment = new Sentiment
+            {
+                Analysis = await responseContent.ReadAsStringAsync()
+            };
 
             return sentiment;
         }
