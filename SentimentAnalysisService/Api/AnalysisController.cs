@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SentimentAnalysisService.Actions;
+using SentimentAnalysisService.Domain;
 
-namespace SentimentAnalysisService.Controllers
+namespace SentimentAnalysisService.Api
 {
     [Route("api/[controller]")]
     public class AnalysisController : Controller
