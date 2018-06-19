@@ -10,8 +10,8 @@ namespace SentimentAnalysisServiceTests
         [Fact]
         public async Task Test1Async()
         {
-            var ibmAnalyzer = new WatsonToneAnalyzer();
-            var sentiment = await ibmAnalyzer.Analyse("Hello there!");
+            var analyseTone = new AnalyseTone();
+            var sentiment = await analyseTone.Analyse("Hello there!");
             Assert.True(sentiment != null);
 
         }
