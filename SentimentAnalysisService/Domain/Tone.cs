@@ -2,6 +2,7 @@
 {
     public enum Tone
     {
-        Neutral
+        Neutral,
+        Joy
     }
 }

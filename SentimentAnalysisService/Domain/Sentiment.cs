@@ -2,8 +2,11 @@
 {
     public class Sentiment
     {
-        public int Score;
-        public string Analysis;
-        public Tone Tone;
+        public Tone Tone { get; }
+
+        public Sentiment(Tone tone)
+        {
+            Tone = tone;
+        }
     }
 }
