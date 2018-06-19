@@ -6,7 +6,7 @@ using EasyConfig;
 
 namespace SentimentAnalysisService.Controllers
 {
-    public class WatsonToneAnalyzer:ISentimentAnalyzer
+    public class AnalyseTone
     {
         public async Task<Sentiment> Analyse(string text)
         {

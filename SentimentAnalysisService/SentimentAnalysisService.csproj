@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="EasyConfig.Net.Core" Version="4.0.97" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
   </ItemGroup>
@@ -18,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="watson-config.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <Content Update="watson-config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>
